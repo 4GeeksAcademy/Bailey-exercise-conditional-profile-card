@@ -47,19 +47,25 @@ function render(variables = {}) {
               : "position-right"
           }">
             <li>
-              <a href="${variables.twitter}"><i class="${
+              <a href="https://twitter.com/${
+                variables.twitter == null ? "#" : variables.twitter
+              }"><i class="${
     variables.twitter == null ? "fab fa-twitter" : "fab fa-twitter-square"
   }"></i></a></li>
             <li>
-              <a href="${variables.github}"><i class="${
+              <a href="https://github.com/${
+                variables.github == null ? "#" : variables.github
+              }"><i class="${
     variables.github == null ? "fab fa-github" : "fab fa-github-square"
   }"></i></a></li>
             <li>
-              <a href="${variables.linkedin}"><i class="${
-    variables.linkedin == null ? "fab fa-linkedin" : "fab fa-linkedin-square"
-  }"></i></a></li>
-            <li>
-            <a href="${variables.instagram}"<i class="${
+              <a href="https://linkedin.com/${
+                variables.linkedin == null ? "#" : variables.linkedin
+              }"><i class="fab fa-linkedin fab fa-linkedin-square"></i></a></li>            
+              <li>
+            <a href="https://www.instagram.com/${
+              variables.instagram == null ? "#" : variables.instagram
+            }"<i class="${
     variables.instagram == null ? "fab fa-instagram" : "fab fa-instagram-square"
   }"></i></a></li>
           </ul>
